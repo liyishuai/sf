@@ -1354,7 +1354,7 @@ Proof with eauto.
     - inversion Hlen.
     - simpl in *.
       destruct l; try lia.
-        apply lt_n_S. apply IHextends. lia.
+        apply ->Nat.succ_lt_mono. apply IHextends. lia.
 Qed.
 
 (** Finally, [ST ++ T] extends [ST], and [extends] is reflexive. *)
@@ -1535,7 +1535,7 @@ Proof with auto.
     unfold store_lookup, store_Tlookup.
     apply le_lt_eq_dec in Hl; destruct Hl as [Hlt | Heq].
     + (* l < length st *)
-      apply lt_S_n in Hlt.
+      apply <-Nat.succ_lt_mono in Hlt.
       rewrite !app_nth1...
       * apply store_weakening with ST. apply extends_app.
         apply Hmatch...
@@ -1946,4 +1946,4 @@ Qed.
 End RefsAndNontermination.
 End STLCRef.
 
-(* 2023-10-18 22:58 *)
+(* 2023-10-23 10:11 *)
