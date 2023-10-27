@@ -502,12 +502,12 @@ Module UnfoldsExample.
 
 Lemma bexp_eval_true : forall b st,
   beval st b = true ->
-  (bassn b) st.
+  (bassertion b) st.
 Proof.
   intros b st Hbe. dup.
 
   (* The old proof: *)
-  unfold bassn. assumption.
+  unfold bassertion. assumption.
 
   (* The new proof: *)
   unfolds. assumption.
@@ -920,4 +920,4 @@ End ExamplesLets.
 
 *)
 
-(* 2023-10-23 10:11 *)
+(* 2023-10-27 13:56 *)

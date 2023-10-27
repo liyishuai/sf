@@ -99,7 +99,7 @@ check_type @wp_invariant (
  valid
    (fun st : Imp.state =>
     (wp (Imp.CWhile b c) Q : Hoare.Assertion) st /\
-    (Hoare.bassn b : Hoare.Assertion) st) c (wp (Imp.CWhile b c) Q))).
+    (Hoare.bassertion b : Hoare.Assertion) st) c (wp (Imp.CWhile b c) Q))).
 idtac "Assumptions:".
 Abort.
 Print Assumptions wp_invariant.
@@ -160,4 +160,4 @@ idtac "".
 idtac "********** Advanced **********".
 Abort.
 
-(* 2023-10-23 10:11 *)
+(* 2023-10-27 13:56 *)

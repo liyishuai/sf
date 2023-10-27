@@ -387,4 +387,4 @@ Tactic Notation "rew_bool" "~" "in" "*" :=
 Tactic Notation "rew_bool" "*" "in" "*" :=
   rew_bool in *; auto_star.
 
-(* 2023-10-23 10:17 *)
+(* 2023-10-27 14:02 *)

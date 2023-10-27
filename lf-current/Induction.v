@@ -264,16 +264,6 @@ Proof.
   (* FILL IN HERE *) Admitted.
 (** [] *)
 
-(** **** Exercise: 1 star, standard, optional (destruct_induction)
-
-    Briefly explain the difference between the tactics [destruct]
-    and [induction].
-
-(* FILL IN HERE *)
-*)
-
-(** [] *)
-
 (* ################################################################# *)
 (** * Proofs Within Proofs *)
 
@@ -771,4 +761,4 @@ Proof.
 
 (** [] *)
 
-(* 2023-10-23 10:10 *)
+(* 2023-10-27 13:55 *)
